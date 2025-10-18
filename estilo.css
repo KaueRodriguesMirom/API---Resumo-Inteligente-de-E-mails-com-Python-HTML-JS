@@ -1,0 +1,75 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  background: linear-gradient(to right, #f0f4f8, #e8ecf1);
+  padding: 40px;
+  color: #333;
+}
+
+/* Título principal */
+h1 {
+  text-align: center;
+  font-size: 2.2em;
+  color: #0078D4;
+  margin-bottom: 40px;
+}
+
+/* Cartão de e-mail */
+.email-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 25px 30px;
+  margin-bottom: 30px;
+  transition: transform 0.2s ease;
+}
+
+.email-card:hover {
+  transform: scale(1.01);
+}
+
+/* Cabeçalho do e-mail */
+.email-card h2 {
+  font-size: 1.1em;
+  color: #0078D4;
+  margin-bottom: 10px;
+}
+
+/* Metadados */
+.meta {
+  font-size: 0.95em;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.meta span {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/* Resumo */
+.resumo {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #444;
+  white-space: pre-wrap;
+}
+
+/* Ícones */
+.meta span::before {
+  margin-right: 6px;
+}
+
+.meta span:nth-child(1)::before {
+  content: "👤";
+}
+
+.meta span:nth-child(2)::before {
+  content: "🕒";
+}

@@ -1,0 +1,770 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Resumo dos E-mails</title>
+  
+<style>  
+
+ body {
+    font-family: 'Segoe UI', sans-serif;
+    background-image: url('Emails.jpg');
+    background-repeat: repeat-y;
+    background-size: auto;
+    background-position: center top;
+    background-color: #f4f6f8;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #00bfff;
+    text-shadow: 1px 1px 2px white;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .email-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .email-card h2 {
+    margin: 0 0 10px;
+    font-size: 18px;
+    color: #0078D4;
+  }
+
+  .email-card .meta {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #555;
+  }
+
+  .email-card .resumo {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+    white-space: pre-wrap;
+  }
+
+  .painel-controles {
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    width: 250px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    z-index: 1000;
+  }
+
+  .painel-controles h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #0078D4;
+  }
+
+  .painel-controles input, .painel-controles button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    font-size: 14px;
+  }
+
+  .painel-controles input {
+    border: 1px solid #ccc;
+  }
+
+  .painel-controles button {
+    background-color: #0078D4;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .painel-controles button:hover {
+    background-color: #005fa3;
+  }
+
+  .modo-escuro {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+  }
+
+  .modo-escuro .email-card {
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+  }
+
+  .modo-escuro .meta, .modo-escuro .resumo {
+    color: #ccc;
+  }
+
+  .modo-escuro .painel-controles {
+    background-color: #2a2a2a;
+  }
+
+  .modo-escuro .painel-controles h3 {
+    color: #e0e0e0;
+  }
+
+  .modo-escuro .painel-controles button {
+    background-color: #444;
+    color: #eee;
+  }
+
+  .modo-escuro .painel-controles button:hover {
+    background-color: #666;
+  }
+</style>
+
+  </style>
+</head>
+<body>
+  <h1>Resumo dos E-mails</h1>
+  <div style="display: flex; align-items: flex-start;">
+    <div style="width: 600px; margin-right: 40px;">
+<div id="emailContainer" style="width: 600px; margin-right: 40px;">
+
+        <div class="email-card">
+          <h2>ID: 199d8a3d1086dbe5</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:35</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a2b938cca34</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:34</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a2a2171f008</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:35</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a29de39dc5e</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:34</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a29c92025c3</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:34</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a1facd42458</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:35</div>
+          <div class="resumo">Confira as atualizações sobre sua candidatura Milhares de vagas que se encaixam
+com você Kauê, temos uma atualização sobre sua candidatura Você se candidatou à
+vaga de MODERADOR DE CONTEÚDO - Bilíngue</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a1f4df68945</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:35</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a1ec7a04455</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:35</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a1d005ba91a</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:35</div>
+          <div class="resumo">Confira as atualizações sobre sua candidatura Milhares de vagas que se encaixam
+com você Kauê, temos uma atualização sobre sua candidatura Você se candidatou à
+vaga de MODERADOR DE CONTEÚDO NAS REDES</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a1c4666ebd5</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:35</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a1bac813d44</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:35</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a19fc9715f7</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:34</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a123f2e981b</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:34</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a08b7d3c003</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:33</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a06c9fbeb6e</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:33</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a02178fd721</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:33</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a017700f0ee</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:33</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d8a010994bff9</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:33</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d89fb8116dba7</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:32</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d89fafe4b22af</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:32</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d89f966b4038c</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:32</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d89f8c39a202f</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:32</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d89f7bca423fb</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:32</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d89f72eb0e41a</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:32</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d89f550bf4d60</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:32</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d89f46ab4199a</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:32</div>
+          <div class="resumo">Acompanhe o status do processo seletivo para não perder atualizações importantes
+Milhares de vagas que se encaixam com você Kauê, sua candidatura foi enviada!
+Agradecemos por se inscrever para a vaga</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d89cc115e6925</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 10:29</div>
+          <div class="resumo">Confira as atualizações sobre sua candidatura Milhares de vagas que se encaixam
+com você Kauê, temos uma atualização sobre sua candidatura Você se candidatou à
+vaga de ANALISTA DE TI PL da empresa</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d899299268c8b</h2>
+          <div class="meta">De: &amp;quot;Neohype.co&amp;quot; &amp;lt;no-reply@pandape.com.br&amp;gt; | Horário: 10:25</div>
+          <div class="resumo">Por favor, não responda ao remetente de este e-mail. Neohype.co Processo
+Seletivo para: ANALISTA DE TI PL A empresa lhe enviou uma mensagem VER MENSAGEM
+Vagas de Neohype.co Caso não queira receber mais</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d88f98e575dcf</h2>
+          <div class="meta">De: Cacau Lovers &amp;lt;lovers@mail.cacaushow.com.br&amp;gt; | Horário: 10:12</div>
+          <div class="resumo">Celebre o dia das crianças com Cacau Show! Feliz Hoje, Kauê Saldo: 2 Cacaus
+Acesse a sua conta Logo 1 Logo 2 Encontre a loja mais próxima Seja um revendedor
+logo facebook logo instagram logo tiktok</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d87ded853458c</h2>
+          <div class="meta">De: &amp;quot;Jéssica Barcelos Lima Nunes&amp;quot; &amp;lt;naoresponda@compleo.com.br&amp;gt; | Horário: 09:55</div>
+          <div class="resumo">Olá, Kauê! Agradecemos por seu interesse em fazer parte da equipe da Provider
+IT! Confirmamos o recebimento da sua candidatura para a vaga de 207956 - Analyst
+- Analista de Negócios Júnior - Home</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d87c1fb7fa233</h2>
+          <div class="meta">De: LinkedIn &amp;lt;jobs-noreply@linkedin.com&amp;gt; | Horário: 09:53</div>
+          <div class="resumo">Sua candidatura foi enviada à Dexian Brasil</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d878d136c135e</h2>
+          <div class="meta">De: LinkedIn &amp;lt;jobs-noreply@linkedin.com&amp;gt; | Horário: 09:50</div>
+          <div class="resumo">Sua candidatura foi enviada à CRDC  Central de Registros</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d87578fc8c8aa</h2>
+          <div class="meta">De: LinkedIn &amp;lt;jobs-noreply@linkedin.com&amp;gt; | Horário: 09:46</div>
+          <div class="resumo">Sua candidatura foi enviada à Empresa Confidencial</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d85ca9ae60043</h2>
+          <div class="meta">De: Mercado Pago &amp;lt;promocao@r.mercadopago.com&amp;gt; | Horário: 09:19</div>
+          <div class="resumo">Parcele em até 24x  Tem alguma dúvida? Fale com a gente no nosso Portal de Ajuda
+Baixe grátis o nosso app VendaSemSairDeCasa Facebook Twitter Youtube Instagram O
+Mercado Pago enviou este e-mail pois</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d84d712ba2061</h2>
+          <div class="meta">De: Alertas de vaga do LinkedIn &amp;lt;jobalerts-noreply@linkedin.com&amp;gt; | Horário: 09:02</div>
+          <div class="resumo">Visualizar vagas em: Brasil</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d841bb527b098</h2>
+          <div class="meta">De: Alex do Hallow &amp;lt;alex@mail.hallow.com&amp;gt; | Horário: 08:50</div>
+          <div class="resumo">Dia da Padroeira do Brasil. Reze com ela no Hallow. Olá Kauê, Há mais de 300
+anos, nas águas do rio Paraíba, algo extraordinário aconteceu. Um grupo de
+pescadores encontrou uma imagem pequena, humilde,</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d83775489a30f</h2>
+          <div class="meta">De: C6 Bank &amp;lt;relacionamento@mail.c6bank.com.br&amp;gt; | Horário: 08:38</div>
+          <div class="resumo">Descubra as vantagens do Empréstimo com Garantia de Imóvel. Não consegue
+visualizar o e-mail corretamente? Veja aqui. C6 Bank. Empréstimo com garantia de
+imóvel. Use seu imóvel para dar o seu próximo</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d830443795136</h2>
+          <div class="meta">De: Laura Costa da Catho &amp;lt;sugestaovagas@catho.com.br&amp;gt; | Horário: 08:30</div>
+          <div class="resumo">Catho Temos uma oportunidade incrível que é a cara do seu perfil! Essa é, sem
+dúvida, a vaga do dia. Confira: Analista de Sistemas Sênior CODE GROUP Empresa
+verificada À combinar São Paulo - SP</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d82a40e36e150</h2>
+          <div class="meta">De: Rd pelo Messenger &amp;lt;messages@facebookmail.com&amp;gt; | Horário: 08:24</div>
+          <div class="resumo">Rd Richard enviou uma mensagem para você. 12 de out, 07:54 da manhã Ver mensagem
+Ir para o perfil Messenger Rd Richard enviou uma mensagem para você. 12 de out,
+07:54 da manhã Ver mensagem Ir para o</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d80b4b96bdee4</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 07:50</div>
+          <div class="resumo">Randstad - Matriz 4.48, Interop Informatica Ltda 4.2, Qualitas Humanus 4.08 Têm
+Novas Vagas Para Você Milhares de vagas que se encaixam com você Olá Kauê, temos
+14 novas Vagas de Técnico De</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d7e70cb328c76</h2>
+          <div class="meta">De: Vagas de Emprego na Catho &amp;lt;avisovagas@catho.com.br&amp;gt; | Horário: 07:10</div>
+          <div class="resumo">KALUNGA e outras empresas contratando na sua região. Ver todos os resultados
+deste aviso  Descadastre-se Seleção de vagas da Catho Olá, tudo bem? Você tem 4
+novas vagas de Analista de Sistemas.</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d7c883c9d2842</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 06:37</div>
+          <div class="resumo">Você está a um passo para candidatar-se na vaga de Business Analyst Bilíngue -
+Dynamics Infojobs.com.br O site de empregos mais utilizado no Brasil Kauê, você
+ainda não finalizou sua candidatura para a</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d7c87ce0249c0</h2>
+          <div class="meta">De: Infojobs &amp;lt;info@infojobs.com.br&amp;gt; | Horário: 06:37</div>
+          <div class="resumo">Você está a um passo para candidatar-se na vaga de Tech Lead Java
+Infojobs.com.br O site de empregos mais utilizado no Brasil Kauê, você ainda não
+finalizou sua candidatura para a vaga de Tech Lead</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d6f4a8deeb27e</h2>
+          <div class="meta">De: Annays pelo Messenger &amp;lt;messages@facebookmail.com&amp;gt; | Horário: 02:46</div>
+          <div class="resumo">Annays Lucio enviou uma mensagem para o grupo group &amp;quot40b6ms13&amp;quot. Silvio,
+Leandro e outras 148 pessoas também estão no grupo group. 12 de out, 02:15 da
+manhã Ver mensagem Ir para o perfil</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d627f2902d657</h2>
+          <div class="meta">De: Magalu &amp;lt;personalizado@mkt.magalu.com&amp;gt; | Horário: 23:02</div>
+          <div class="resumo">Até 30%OFF  Frete Grátis!</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d5dde74f76bfd</h2>
+          <div class="meta">De: &amp;quot;Carlos Alberto Tavares Ferreira 🌱💧 via LinkedIn&amp;quot; &amp;lt;newsletters-noreply@linkedin.com&amp;gt; | Horário: 21:41</div>
+          <div class="resumo">Por: Carlos Alberto Tavares Ferreira  CEO Carbon Zero O silêncio das bolhas</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d584a6d6e6ec6</h2>
+          <div class="meta">De: Universo Band &amp;lt;news@minhaband.com.br&amp;gt; | Horário: 20:04</div>
+          <div class="resumo">Baixe o app agora! _____________________________________________________________
+__________________________________________________ Visualizar este e-mail como
+página web Só falta você!  Oi, Kau,</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d54da6c3b6a3a</h2>
+          <div class="meta">De: Ex-Colega via LinkedIn &amp;lt;newsletters-noreply@linkedin.com&amp;gt; | Horário: 19:04</div>
+          <div class="resumo">Em um panorama corporativo onde a colaboração e a inovação deveriam reinar, o</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d54cdcf987fb8</h2>
+          <div class="meta">De: LinkedIn &amp;lt;jobs-noreply@linkedin.com&amp;gt; | Horário: 19:03</div>
+          <div class="resumo">Aproveite tudo o que o LinkedIn tem a oferecer</div>
+        </div>
+        
+        <div class="email-card">
+          <h2>ID: 199d4dedbaa3873a</h2>
+          <div class="meta">De: Alertas de vaga do LinkedIn &amp;lt;jobalerts-noreply@linkedin.com&amp;gt; | Horário: 17:03</div>
+          <div class="resumo">Desenvolvedor de sistemas em vannuchiGroup: DESCRIÇÃO DA VAGAEstamos em busca de
+uma</div>
+        </div>
+        </div>
+  <div class="painel-controles">
+    <h3>Controles</h3>
+    <input type="text" id="filtroInput" placeholder="Filtrar por remetente ou horário...">
+    <button onclick="filtrarEmails()">Filtrar</button>
+    <button onclick="ordenarEmails('desc')">Mais recentes</button>
+    <button onclick="ordenarEmails('asc')">Mais antigos</button>
+    <button onclick="alternarTema()">Alternar tema</button>
+    <button onclick="exportarTodosPDF()">Exportar PDF</button>
+    <button onclick="abrirGraficos()">Ver Gráficos</button>
+  </div>
+
+</body>
+</html>
+
+  <div id="modalGraficos" style="
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    z-index: 2000;
+    width: 700px;
+    max-height: 80vh;
+    overflow-y: auto;
+  ">
+    <h3 style="text-align: center; margin-bottom: 20px; font-size: 20px; color: #0078D4;">
+      📊 Estatísticas dos E-mails
+    </h3>
+
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 25px;">
+      <canvas id="graficoPorDia" width="450" height="140"></canvas>
+      <canvas id="graficoPorRemetente" width="450" height="140"></canvas>
+      <canvas id="graficoPorHorario" width="450" height="140"></canvas>
+    </div>
+
+    <button onclick="fecharGraficos()" style="
+      margin-top: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #0078D4;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    ">Fechar</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script>
+    function filtrarEmails() {
+      console.log("🔍 Aplicando filtro...");
+      const termo = document.getElementById("filtroInput").value.toLowerCase();
+      const cards = document.querySelectorAll(".email-card");
+      cards.forEach(card => {
+        const remetente = card.querySelector(".meta").innerText.toLowerCase();
+        const resumo = card.querySelector(".resumo").innerText.toLowerCase();
+        card.style.display = (remetente.includes(termo) || resumo.includes(termo)) ? "block" : "none";
+      });
+    }
+
+    function ordenarEmails(ordem) {
+      console.log("📊 Ordenando e-mails por " + ordem);
+      const container = document.getElementById("emailContainer");
+      const cards = Array.from(document.querySelectorAll(".email-card"));
+      cards.sort((a, b) => {
+        const horaA = a.querySelector(".meta").innerText.match(/Horário: (\d{2}:\d{2})/);
+        const horaB = b.querySelector(".meta").innerText.match(/Horário: (\d{2}:\d{2})/);
+        if (!horaA || !horaB) return 0;
+        return ordem === "asc" ? horaA[1].localeCompare(horaB[1]) : horaB[1].localeCompare(horaA[1]);
+      });
+      cards.forEach(card => container.appendChild(card));
+    }
+
+    function alternarTema() {
+      console.log("🌓 Alternando tema...");
+      document.body.classList.toggle("modo-escuro");
+    }
+
+    async function exportarTodosPDF() {
+      console.log("📄 Exportando para PDF...");
+      try {
+        const { jsPDF } = window.jspdf;
+        const doc = new jsPDF();
+        const cards = document.querySelectorAll(".email-card");
+        let y = 20;
+
+        for (let i = 0; i < cards.length; i++) {
+          const card = cards[i];
+          const id = card.querySelector("h2").innerText;
+          const meta = card.querySelector(".meta").innerText;
+          const resumo = card.querySelector(".resumo").innerText;
+
+          doc.setFont("helvetica", "bold");
+          doc.setTextColor(0, 0, 0);
+          doc.text(id, 10, y);
+          doc.setFont("helvetica", "normal");
+          doc.setTextColor(80, 80, 80);
+          const resumoFormatado = doc.splitTextToSize(resumo, 180);
+          doc.text(meta, 10, y + 10);
+          doc.text(resumoFormatado, 10, y + 20);
+
+          y += 20 + resumoFormatado.length * 6;
+
+          if (y > 270) {
+            doc.addPage();
+            y = 20;
+          }
+        }
+
+        doc.save("resumo_50_emails.pdf");
+        console.log("✅ PDF gerado com sucesso.");
+      } catch (error) {
+        console.error("❌ Erro ao gerar PDF:", error);
+      }
+    }
+
+    function abrirGraficos() {
+      console.log("📊 Abrindo gráficos...");
+      document.getElementById("modalGraficos").style.display = "block";
+    }
+
+    function fecharGraficos() {
+      console.log("❎ Fechando gráficos...");
+      document.getElementById("modalGraficos").style.display = "none";
+    }
+
+    const emailsPorDia = {
+      "2025-10-06": 12,
+      "2025-10-07": 18,
+      "2025-10-08": 9
+    };
+
+    const emailsPorRemetente = {
+      "contato@empresa.com": 10,
+      "suporte@servico.com": 8,
+      "newsletter@site.com": 6,
+      "outros": 15
+    };
+
+    const emailsPorHorario = {
+      "00h–06h": 2,
+      "06h–12h": 10,
+      "12h–18h": 20,
+      "18h–00h": 7
+    };
+
+    const legendStyle = {
+      labels: {
+        color: "#000",
+        font: { weight: "bold", size: 12 },
+        boxWidth: 14,
+        padding: 10,
+        usePointStyle: true
+      }
+    };
+
+    try {
+      new Chart(document.getElementById("graficoPorDia"), {
+        type: "bar",
+        data: {
+          labels: Object.keys(emailsPorDia),
+          datasets: [{
+            label: "E-mails por dia",
+            data: Object.values(emailsPorDia),
+                        backgroundColor: "#000000",
+            borderColor: "#555555",
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: legendStyle,
+            title: {
+              display: true,
+              text: "E-mails recebidos por dia",
+              color: "#000",
+              font: { size: 14, weight: "bold" }
+            }
+          }
+        }
+      });
+
+      new Chart(document.getElementById("graficoPorRemetente"), {
+        type: "pie",
+        data: {
+          labels: Object.keys(emailsPorRemetente),
+          datasets: [{
+            label: "E-mails por remetente",
+            data: Object.values(emailsPorRemetente),
+            backgroundColor: ["#000000", "#555555", "#aaaaaa", "#ffffff"],
+            borderColor: "#333333",
+            borderWidth: 1
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: legendStyle,
+            title: {
+              display: true,
+              text: "Distribuição por remetente",
+              color: "#000",
+              font: { size: 14, weight: "bold" }
+            }
+          }
+        }
+      });
+
+      new Chart(document.getElementById("graficoPorHorario"), {
+        type: "line",
+        data: {
+          labels: Object.keys(emailsPorHorario),
+          datasets: [{
+            label: "E-mails por faixa horária",
+            data: Object.values(emailsPorHorario),
+            borderColor: "#000000",
+            backgroundColor: "rgba(200,200,200,0.3)",
+            fill: true
+          }]
+        },
+        options: {
+          responsive: true,
+          plugins: {
+            legend: legendStyle,
+            title: {
+              display: true,
+              text: "E-mails por horário do dia",
+              color: "#000",
+              font: { size: 14, weight: "bold" }
+            }
+          }
+        }
+      });
+    } catch (error) {
+      console.error("❌ Erro ao renderizar gráficos:", error);
+    }
+  </script>
+</body>
+</html>
